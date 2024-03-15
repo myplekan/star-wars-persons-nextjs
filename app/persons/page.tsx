@@ -3,7 +3,7 @@ import { Person } from "../types/person";
 import Pagination from "../components/Pagination";
 import { getId } from "../services/services";
 import getPersonPerPage from "../services/fetch";
-import { Persons } from "../types/persons";
+import type { Persons } from "../types/persons";
 
 const Persons = async ({
   searchParams,
