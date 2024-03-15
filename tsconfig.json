@@ -35,7 +35,7 @@
     ".next/types/**/*.ts",
     "app/api/route.ts",
     "app/page.jsx"
-, "app/persons/[personName]/page.jsx", "app/components/Flow.jsx"  ],
+, "app/persons/[personName]/page.jsx", "app/components/Flow.jsx"],
   "exclude": [
     "node_modules"
   ]

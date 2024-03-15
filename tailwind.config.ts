@@ -3,8 +3,8 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "src/components/**/**/*.{js,ts,jsx,tsx,mdx}",
+    "src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -18,7 +18,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "persons-opacity-50": "rgba(22, 78, 99, 0.5)",
+        "persons-opacity-80": "rgba(22, 78, 99, 0.8)",
         "persons-opacity-100": "rgba(22, 78, 99, 1)",
       },
       height: {

@@ -13,7 +13,7 @@ const Header = () => {
       <Link href="/" className="absolute left-2">
         <Image src="/star-wars-logo.png" alt="Logo" width={100} height={56} />
       </Link>
-      <ul className="flex bg-slate-500 justify-center gap-6">
+      <ul className="flex bg-slate-500 justify-center gap-6 text-white">
         <li>
           <Link
             className={clsx("flex py-4 hover:text-cyan-400 duration-500", {

@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from "react";
 import { Person } from "../types/person";
 import { Starship } from "../types/starship";
-import { getPerson, getStarShips } from "../services/services";
+import { getPerson, getStarShips } from "./services";
 
 // Function to fetch data for a specific person
 export default async function getPersonPerPage(value: string) {

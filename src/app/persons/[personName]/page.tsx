@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Flow from "../../components/Flow";
+import Flow from "../../../components/Flow";
 import { ReactFlowProvider } from "reactflow";
-import { Person } from "@/app/types/person";
-import { Starship } from "@/app/types/starship";
-import { fetchPerson, fetchStarShips } from "@/app/services/fetch";
+import { Person } from "@/src/types/person";
+import { Starship } from "@/src/types/starship";
+import { fetchPerson, fetchStarShips } from "@/src/services/fetch";
 
 const PersonInfo = ({ params }: Params) => {
   const [person, setPerson] = useState<Person | null>(null);
