@@ -2,7 +2,7 @@
 
 ## Project Description:
 
-    - This project is a web application developed using Next.js framework, which is a React-based open-source front-end development framework that enables functionality such as server-side rendering and generating static websites for React based web applications.
+    This project is a web application developed using Next.js framework, which is a React-based open-source front-end development framework that enables functionality such as server-side rendering and generating static websites for React based web applications.
 
 ## Preview:
 
@@ -36,24 +36,24 @@
 
 ## Technologies Used:
 
-    - Next.js: Next.js is used as the primary framework for building the web application.
-    - ReactFlow: ReactFlow is used to create the graphical representation of relationships between persons and starships.
-    - SWAPI: The Star Wars API (SWAPI) is utilized to fetch data about characters and starships from the Star Wars universe.
-    - Axios: Axios is used for making HTTP requests to fetch data from the SWAPI.
-    - Tailwind CSS: Tailwind CSS is used for styling the components and UI elements of the application.
-    - clsx: clsx is used for dynamic class names generation and management, enabling conditional styling of components.
+  1. Next.js: Next.js is used as the primary framework for building the web application.
+  2. ReactFlow: ReactFlow is used to create the graphical representation of relationships between persons and starships.
+  3. SWAPI: The Star Wars API (SWAPI) is utilized to fetch data about characters and starships from the Star Wars universe.
+  4. Axios: Axios is used for making HTTP requests to fetch data from the SWAPI.
+  5. Tailwind CSS: Tailwind CSS is used for styling the components and UI elements of the application.
+  6. clsx: clsx is used for dynamic class names generation and management, enabling conditional styling of components.
 
 ## Project Structure:
 
-    - Pages: Contains the main pages of the application, such as the list of persons and details page.
-    - Components: Includes reusable components like Pagination and Header used across different pages.
-    - Services: Contains utility functions for fetching data from the SWAPI.
-    - Types: Contains TypeScript interfaces representing the data structures used in the application.
-    - API: Houses the server-side logic for handling requests to fetch data.
+  1. Pages: Contains the main pages of the application, such as the list of persons and details page.
+  2. Components: Includes reusable components like Pagination and Header used across different pages.
+  3. Services: Contains utility functions for fetching data from the SWAPI.
+  4. Types: Contains TypeScript interfaces representing the data structures used in the application.
+  5. API: Houses the server-side logic for handling requests to fetch data.
 
 ## How to Run the Project:
 
-    - Clone the repository to your local.
-    - Install dependencies using npm install.
-    - Start the development server using npm run dev.
-    - Access the application in your web browser at the specified URL.
+  1. Clone the repository to your local.
+  2. Install dependencies using npm install.
+  3. Start the development server using npm run dev.
+  4. Access the application in your web browser at the specified URL.
