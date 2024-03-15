@@ -2,7 +2,7 @@
 
 ## Project Description:
 
-    This project is a web application developed using Next.js framework, which is a React-based open-source front-end development framework that enables functionality such as server-side rendering and generating static websites for React based web applications.
+  This project is a web application developed using Next.js framework, which is a React-based open-source front-end development framework that enables functionality such as server-side rendering and generating static websites for React based web applications.
 
 ## Preview:
 
