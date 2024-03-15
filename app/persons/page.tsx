@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { getPersonPerPage } from "../api/route";
 import { Person } from "../types/person";
 import { Persons } from "../types/persons";
 import Pagination from "../components/Pagination";
 import { getId } from "../services/services";
+import getPersonPerPage from "../services/fetch";
 
 const Persons = async ({
   searchParams,

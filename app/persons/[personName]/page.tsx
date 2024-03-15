@@ -5,7 +5,7 @@ import Flow from "../../components/Flow";
 import { ReactFlowProvider } from "reactflow";
 import { Person } from "@/app/types/person";
 import { Starship } from "@/app/types/starship";
-import { fetchPerson, fetchStarShips } from "@/app/api/route";
+import { fetchPerson, fetchStarShips } from "@/app/services/fetch";
 
 const PersonInfo = ({ params }: Params) => {
   const [person, setPerson] = useState<Person | null>(null);
