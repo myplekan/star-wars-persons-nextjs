@@ -4,7 +4,7 @@ import { Starship } from "../types/starship";
 import { getPerson, getStarShips } from "../services/services";
 
 // Function to fetch data for a specific person
-export async function getPersonPerPage(value: string) {
+export default async function getPersonPerPage(value: string) {
   const res = await fetch(`https://sw-api.starnavi.io/${value}`, {
     headers: {
       'Content-Type': 'application/json',
