@@ -1,36 +1,17 @@
-"use client";
+import FlowProvider from "@/src/components/FlowProvider";
+import { getPerson, getStarShips } from "@/src/services/services";
 
-import { useEffect, useState } from "react";
-import Flow from "../../../components/Flow";
-import { ReactFlowProvider } from "reactflow";
-import { Person } from "@/src/types/person";
-import { Starship } from "@/src/types/starship";
-import { fetchPerson, fetchStarShips } from "@/src/services/fetch";
+const PersonInfo = async ({ params }: Params) => {
+  // Fetching information about the person
+  const person = await getPerson(params.personName);
 
-const PersonInfo = ({ params }: Params) => {
-  const [person, setPerson] = useState<Person | null>(null);
-  const [starships, setStarships] = useState<Starship[]>([]);
-
-  // Effect to fetch person data when params.personName changes
-  useEffect(() => {
-    fetchPerson(setPerson, params.personName);
-  }, [params.personName]);
-
-  // Effect to fetch starships data when person changes
-  useEffect(() => {
-    if (person) {
-      fetchStarShips(setStarships, person);
-    }
-  }, [person]);
+  // Fetching the list of starships associated with this person
+  const { results: starships } = await getStarShips(person.starships);
 
   return (
     <>
       {person && starships && (
-        <div style={{ height: "90vh" }}>
-          <ReactFlowProvider>
-            <Flow person={person} starships={starships} />
-          </ReactFlowProvider>
-        </div>
+        <FlowProvider person={person} starships={starships} />
       )}
     </>
   );
