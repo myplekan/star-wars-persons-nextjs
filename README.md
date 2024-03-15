@@ -4,6 +4,10 @@
 
     - This project is a web application developed using Next.js framework, which is a React-based open-source front-end development framework that enables functionality such as server-side rendering and generating static websites for React based web applications.
 
+## Preview:
+
+[Star Wars person Preview](https://star-wars-persons-nextjs.vercel.app/)
+
 ## Features:
 
 1. Fetching Persons Data:
